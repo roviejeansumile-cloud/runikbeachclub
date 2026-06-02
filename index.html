@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Runik Beach Club — Siquijor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,300;1,400&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span class="brand-icon">🌊</span>
+        <span>Runik<em>Beach Club</em></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#spots">Attractions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg">
+      <div class="hero-video-overlay"></div>
+      <div class="hero-ocean-bg">
+    <video
+    autoplay
+    muted
+    loop
+    playsinline
+    style="position:absolute; inset:0; width:100%; height:100%;
+           object-fit:cover; z-index:-1;">
+    <source src="runik1.mp4" type="video/mp4"/>
+  </video>
+</div>
+    </div>
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-7">
+          <div class="hero-content">
+            <span class="hero-eyebrow" data-aos="fade-up" data-aos-delay="100">✦ Island of Fire — Siquijor</span>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+              Welcome to<br/>
+              <em>Runik</em><br/>
+              Beach Club
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="350">
+              Your premier beachfront escape on the mystical shores of Siquijor — where the sea breeze, white sands, and unforgettable nights await you.
+            </p>
+            <div class="hero-actions" data-aos="fade-up" data-aos-delay="450">
+              <a href="#spots" class="btn btn-hero-primary">Explore Club</a>
+              <a href="#gallery" class="btn btn-hero-ghost" style="color: var(--sunset); border-color: var(--sunset);">
+               <i class="bi bi-play-circle-fill me-2"></i>View Gallery
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+          <div class="hero-card-stack" data-aos="fade-left" data-aos-delay="300">
+            <div class="hero-float-card card-1">
+              <div class="float-card-img" style="background: url('4.jpg') center/cover"></div>
+              <div class="float-card-label">Runik Beach Club</div>
+            </div>
+            <div class="hero-float-card card-2">
+              <div class="float-card-img" style="background: url('7.jpg') center/cover"></div>
+              <div class="float-card-label">Runik Beach Club</div>
+            </div>
+            <div class="hero-stat-badge">
+              <span class="stat-num">4.9</span>
+              <span class="stat-label">★ Rating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to Explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span>Beachfront Bar</span><span class="dot">✦</span>
+      <span>Runik Beach Club</span><span class="dot">✦</span>
+      <span>Pool Parties</span><span class="dot">✦</span>
+      <span>Island Hopping</span><span class="dot">✦</span>
+      <span>Live Music Nights</span><span class="dot">✦</span>
+      <span>Sunset Cocktails</span><span class="dot">✦</span>
+      <span>Water Sports</span><span class="dot">✦</span>
+      <span>Siquijor Island</span><span class="dot">✦</span>
+      <span>Beachfront Bar</span><span class="dot">✦</span>
+      <span>Runik Beach Club</span><span class="dot">✦</span>
+      <span>Pool Parties</span><span class="dot">✦</span>
+      <span>Island Hopping</span><span class="dot">✦</span>
+      <span>Live Music Nights</span><span class="dot">✦</span>
+      <span>Sunset Cocktails</span><span class="dot">✦</span>
+      <span>Water Sports</span><span class="dot">✦</span>
+      <span>Siquijor Island</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ===== SPOTS SECTION ===== -->
+  <section class="spots-section" id="spots">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Club Highlights</span>
+        <h2 class="section-title">Discover Runik &<br/><em>Siquijor's Magic</em></h2>
+        <p class="section-sub">From our legendary beachfront bar to thrilling water adventures — every moment at Runik Beach Club is designed to be unforgettable.</p>
+      </div>
+
+      <div class="filter-tabs" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="club">Club</button>
+        <button class="filter-btn" data-filter="beach">Beaches</button>
+      </div>
+
+      <div class="row g-4 mt-2" id="spotsGrid">
+
+        <!-- Card 1: Beachfront Bar -->
+        <div class="col-md-6 col-lg-4 spot-item" data-category="club" data-aos="fade-up" data-aos-delay="100">
+          <div class="spot-card featured">
+            <div class="featured-label">✦ Featured</div>
+            <div class="spot-img lightbox-trigger"
+              data-img="1.jpg"
+              data-caption="Runik Beachfront Bar"
+              data-loc="Runik Beach Club, Siquijor"
+              style="background: url('1.jpg') center/cover">
+              <span class="spot-badge nature">Bar & Lounge</span>
+              <div class="spot-overlay">
+                <a href="#contact" class="spot-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+              <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            </div>
+            <div class="spot-body">
+              <div class="spot-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <span>5.0</span>
+              </div>
+              <h3 class="spot-name">Beachfront Bar</h3>
+              <p class="spot-location"><i class="bi bi-geo-alt"></i> Runik Beach Club, Siquijor</p>
+              <p class="spot-desc">Sip signature cocktails with your toes in the sand. Our beachfront bar serves handcrafted drinks, cold beers, and fresh buko shakes — all with a stunning sea view.</p>
+              <div class="spot-meta">
+                <span><i class="bi bi-clock"></i> Open Daily 10AM–12MN</span>
+                <span><i class="bi bi-cash"></i> No cover charge</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Infinity Pool -->
+        <div class="col-md-6 col-lg-4 spot-item" data-category="club" data-aos="fade-up" data-aos-delay="200">
+          <div class="spot-card">
+            <div class="spot-img lightbox-trigger"
+              data-img="8.jpg"
+              data-caption="Runik Infinity Pool"
+              data-loc="Runik Beach Club, Siquijor"
+              style="background: url('8.jpg') center/cover">
+              <span class="spot-badge nature">Club</span>
+              <div class="spot-overlay">
+                <a href="#contact" class="spot-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+              <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            </div>
+            <div class="spot-body">
+              <div class="spot-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                <span>4.8</span>
+              </div>
+              <h3 class="spot-name">Infinity Pool with Ocean Views</h3>
+              <p class="spot-location"><i class="bi bi-geo-alt"></i> Runik Beach Club, Siquijor</p>
+              <p class="spot-desc">Glide through our stunning infinity pool as it seamlessly blends into the horizon. Whether you're doing laps or floating lazily with a cocktail in hand, the ocean views make every dip unforgettable.</p>
+              <div class="spot-meta">
+                <span><i class="bi bi-clock"></i> Open Daily</span>
+                <span><i class="bi bi-cash"></i> Day use available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Cocktails -->
+        <div class="col-md-6 col-lg-4 spot-item" data-category="club" data-aos="fade-up" data-aos-delay="300">
+          <div class="spot-card">
+            <div class="spot-img lightbox-trigger"
+              data-img="13.jpg"
+              data-caption="Runik Cocktails"
+              data-loc="Runik Beach Club, Siquijor"
+              style="background: url('13.jpg') center/cover">
+              <span class="spot-badge nature">Bar & Lounge</span>
+              <div class="spot-overlay">
+                <a href="#contact" class="spot-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+              <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            </div>
+            <div class="spot-body">
+              <div class="spot-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <span>4.9</span>
+              </div>
+              <h3 class="spot-name">Cocktails</h3>
+              <p class="spot-location"><i class="bi bi-geo-alt"></i> Runik Beach Club, Siquijor</p>
+              <p class="spot-desc">From tropical fruit mixes to classic beach cocktails, our bartenders craft every drink with fresh local ingredients. Pair your sunset with our signature Runik Sunrise or a chilled buko mojito.</p>
+              <div class="spot-meta">
+                <span><i class="bi bi-clock"></i> Open Daily</span>
+                <span><i class="bi bi-cash"></i> Free – ₱500 cover</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: DJ / Music Vibes -->
+        <div class="col-md-6 col-lg-4 spot-item" data-category="club" data-aos="fade-up" data-aos-delay="100">
+          <div class="spot-card">
+            <div class="spot-img lightbox-trigger"
+              data-img="4.jpg"
+              data-caption="DJ & Music Vibes at Runik"
+              data-loc="Runik Beach Club, Siquijor"
+              style="background: url('4.jpg') center/cover">
+              <span class="spot-badge nature">Events</span>
+              <div class="spot-overlay">
+                <a href="#contact" class="spot-btn">See Schedule <i class="bi bi-arrow-right"></i></a>
+              </div>
+              <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            </div>
+            <div class="spot-body">
+              <div class="spot-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <span>5.0</span>
+              </div>
+              <h3 class="spot-name">DJ & Music Vibes</h3>
+              <p class="spot-location"><i class="bi bi-geo-alt"></i> Runik Beach Club, Siquijor</p>
+              <p class="spot-desc">Feel the beat drop as our resident DJs and live musicians take the stage. From chill acoustic afternoons to high-energy night sets, Runik is Siquijor's ultimate music and party destination.</p>
+              <div class="spot-meta">
+                <span><i class="bi bi-clock"></i> Fri & Sat Nights</span>
+                <span><i class="bi bi-cash"></i> Free – ₱200 cover</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Jacuzzi -->
+        <div class="col-md-6 col-lg-4 spot-item" data-category="club" data-aos="fade-up" data-aos-delay="200">
+          <div class="spot-card">
+            <div class="spot-img lightbox-trigger"
+              data-img="5.jpg"
+              data-caption="Jacuzzi & Hot Tub Relaxation"
+              data-loc="Runik Beach Club, Siquijor"
+              style="background: url('5.jpg') center/cover">
+              <span class="spot-badge nature">Relaxation</span>
+              <div class="spot-overlay">
+                <a href="#contact" class="spot-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+              <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            </div>
+            <div class="spot-body">
+              <div class="spot-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <span>5.0</span>
+              </div>
+              <h3 class="spot-name">Jacuzzi & Hot Tub Relaxation</h3>
+              <p class="spot-location"><i class="bi bi-geo-alt"></i> Runik Beach Club, Siquijor</p>
+              <p class="spot-desc">Melt away the stress in our private jacuzzi and hot tub, set right by the shoreline. The perfect way to unwind after a day of sun and sea — best enjoyed with a cold drink in hand.</p>
+              <div class="spot-meta">
+                <span><i class="bi bi-clock"></i> Daily, 7AM–10PM</span>
+                <span><i class="bi bi-cash"></i> Free</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Rooms -->
+        <div class="col-md-6 col-lg-4 spot-item" data-category="nature" data-aos="fade-up" data-aos-delay="300">
+          <div class="spot-card">
+            <div class="spot-img lightbox-trigger"
+              data-img="9.jpg"
+              data-caption="Runik Beach Club Rooms"
+              data-loc="Runik Beach Club, Siquijor"
+              style="background: url('9.jpg') center/cover">
+              <span class="spot-badge nature">Accommodation</span>
+              <div class="spot-overlay">
+                <a href="#contact" class="spot-btn">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+              <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+            </div>
+            <div class="spot-body">
+              <div class="spot-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                <span>4.8</span>
+              </div>
+              <h3 class="spot-name">Rooms</h3>
+              <p class="spot-location"><i class="bi bi-geo-alt"></i> Runik Beach Club, Siquijor</p>
+              <p class="spot-desc">Wake up steps from the shore in our cozy, air-conditioned rooms designed for comfort and style. Each room features beach-inspired décor, modern amenities, and easy access to all club facilities.</p>
+              <div class="spot-meta">
+                <span><i class="bi bi-clock"></i> Check-in: 2PM</span>
+                <span><i class="bi bi-cash"></i> From ₱2,500/night</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCES ===== -->
+  <section class="experiences-section" id="experiences">
+    <div class="exp-bg"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <span class="section-tag light">Why Runik Beach Club</span>
+          <h2 class="section-title light">The Club That<br/><em>Has It All</em></h2>
+          <p class="section-sub light">From beachside cocktails to thrilling water adventures — Runik Beach Club is Siquijor's ultimate chill-and-thrill destination.</p>
+          <a href="#contact" class="btn btn-exp-cta mt-3">Find Us</a>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="exp-card">
+                <div class="exp-icon"><i class="bi bi-cup-straw"></i></div>
+                <h4>Cocktail Bar</h4>
+                <p>Signature tropical cocktails, fresh buko shakes, and ice-cold beers served right on the beach.</p>
+              </div>
+            </div>
+            <div class="col-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="exp-card accent">
+                <div class="exp-icon"><i class="bi bi-music-note-beamed"></i></div>
+                <h4>Live Music & DJs</h4>
+                <p>Weekend parties, acoustic nights, and DJ sets under the Siquijor stars — the island's best nightlife.</p>
+              </div>
+            </div>
+            <div class="col-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="exp-card accent">
+                <div class="exp-icon"><i class="bi bi-water"></i></div>
+                <h4>Water Activities</h4>
+                <p>Kayaking, paddleboarding, snorkeling & island hopping — all arranged from our shore.</p>
+              </div>
+            </div>
+            <div class="col-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="exp-card">
+                <div class="exp-icon"><i class="bi bi-sunrise"></i></div>
+                <h4>Sunset Sessions</h4>
+                <p>Siquijor's most breathtaking golden hour, enjoyed with a drink from our bar on the sand.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-item">
+            <span class="stat-number">10+</span>
+            <span class="stat-text">Years by the Shore</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-item">
+            <span class="stat-number">20+</span>
+            <span class="stat-text">Signature Cocktails</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-item">
+            <span class="stat-number">4.9</span>
+            <span class="stat-text">★ Guest Rating</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="stat-item">
+            <span class="stat-number">∞</span>
+            <span class="stat-text">Good Vibes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Gallery</span>
+        <h2 class="section-title">Through The<br/><em>Lens of Runik</em></h2>
+      </div>
+      <div class="gallery-grid" data-aos="fade-up" data-aos-delay="150">
+        <div class="gallery-item tall lightbox-trigger"
+          data-img="3.jpg"
+          data-caption="Runik Beachfront Bar"
+          data-loc="Runik Beach Club, Siquijor"
+          style="background: url('3.jpg') center/cover">
+          <div class="gallery-caption">Runik Bar</div>
+          <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item lightbox-trigger"
+          data-img="17.jpg"
+          data-caption="Runik Romantic date-night dinners or group hangouts"
+          data-loc="Runik Beach Club, Siquijor"
+          style="background: url('17.jpg') center/cover">
+          <div class="gallery-caption">Romantic date-night dinners or group hangouts</div>
+          <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item lightbox-trigger"
+          data-img="12.jpg"
+          data-caption="Runik Pool & Jacuzzi Area"
+          data-loc="Runik Beach Club, Siquijor"
+          style="background: url('12.jpg') center/cover">
+          <div class="gallery-caption">Pool & Jacuzzi</div>
+          <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item wide lightbox-trigger"
+          data-img="20.jpg"
+          data-caption="Siquijor Sunset at Runik"
+          data-loc="Runik Beach Club, Siquijor"
+          style="background: url('20.jpg') center/cover">
+          <div class="gallery-caption">Sunset Sessions</div>
+          <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item lightbox-trigger"
+          data-img="19.jpg"
+          data-caption="Runik Nightlife"
+          data-loc="Runik Beach Club, Siquijor"
+          style="background: url('19.jpg') center/cover">
+          <div class="gallery-caption">Nightlife</div>
+          <div class="gallery-zoom-icon"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT & LOCATION ===== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-wrapper" data-aos="fade-up">
+        <div class="row g-5 align-items-stretch">
+
+          <!-- Contact Info -->
+          <div class="col-lg-5" data-aos="fade-right">
+            <span class="section-tag">Get in Touch</span>
+            <h2 class="section-title mt-2">Contact &<br/><em>Find Us</em></h2>
+            <p class="section-sub">Drop by, message us, or give us a call — we'd love to welcome you to Runik Beach Club!</p>
+
+            <div class="contact-info-block mt-4">
+              <div class="contact-info-item">
+                <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+                <div>
+                  <div class="contact-label">Phone / Viber / WhatsApp</div>
+                  <a href="tel:+639171234567" class="contact-value">+63 917 123 4567</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <div class="contact-label">Email</div>
+                  <a href="mailto:hello@runikbeachclub.com" class="contact-value">hello@runikbeachclub.com</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-icon"><i class="bi bi-facebook"></i></div>
+                <div>
+                  <div class="contact-label">Facebook</div>
+                  <a href="https://facebook.com/runikbeachclub" target="_blank" class="contact-value">facebook.com/runikbeachclub</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-icon"><i class="bi bi-instagram"></i></div>
+                <div>
+                  <div class="contact-label">Instagram</div>
+                  <a href="https://instagram.com/runikbeachclub" target="_blank" class="contact-value">@runikbeachclub</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-icon"><i class="bi bi-clock-fill"></i></div>
+                <div>
+                  <div class="contact-label">Operating Hours</div>
+                  <div class="contact-value">Open Daily — 10:00 AM to 12:00 MN</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Location / Map -->
+          <div class="col-lg-7" data-aos="fade-left">
+            <span class="section-tag">Our Location</span>
+            <h2 class="section-title mt-2">How to<br/><em>Get Here</em></h2>
+
+            <div class="location-address-card">
+              <div class="loc-pin-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <div class="loc-name">Runik Beach Club</div>
+                <div class="loc-address">San Juan, Siquijor Island, Philippines</div>
+              </div>
+            </div>
+
+            <div class="map-embed-wrap">
+              <iframe src="https://www.google.com/maps/embed?pb=!4v1780018418600!6m8!1m7!1stWsw7-Lc08VGY7Bkd8zLug!2m2!1d9.140463145189173!2d123.514179673865!3f211.49666600631903!4f-10.593341075656667!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                width="100%"
+                height="300"
+                style="border:0; border-radius: 16px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <div class="directions-grid mt-3">
+              <div class="direction-card">
+                <i class="bi bi-water"></i>
+                <div>
+                  <strong>By Ferry</strong>
+                  <span>From Dumaguete or Cebu — fast crafts available daily</span>
+                </div>
+              </div>
+              <div class="direction-card">
+                <i class="bi bi-bicycle"></i>
+                <div>
+                  <strong>From Siquijor Port</strong>
+                  <span>~15 mins by habal-habal or tricycle to San Juan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <span class="brand-icon">🌊</span>
+            <span>Runik<em>Beach Club</em></span>
+          </div>
+          <p class="footer-tagline">Siquijor's premier beachfront club — where good vibes, great drinks, and the ocean meet.</p>
+          <div class="footer-socials">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Explore</h5>
+          <ul class="footer-links">
+            <li><a href="#">Bar & Drinks</a></li>
+            <li><a href="#">Pool & Beach</a></li>
+            <li><a href="#">Events & Parties</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Info</h5>
+          <ul class="footer-links">
+            <li><a href="#">Travel Tips</a></li>
+            <li><a href="#">Best Season</a></li>
+            <li><a href="#">Getting Here</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="footer-heading">Newsletter</h5>
+          <p class="footer-tagline">Get exclusive deals, event schedules, and Siquijor tips in your inbox.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="your@email.com" class="newsletter-input"/>
+            <button class="newsletter-btn"><i class="bi bi-send-fill"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 Runik Beach Club. San Juan, Siquijor Island, Philippines.</span>
+        <span>Privacy · Terms</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox-overlay" id="lightboxOverlay">
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightboxClose"><i class="bi bi-x-lg"></i></button>
+      <button class="lightbox-nav prev" id="lightboxPrev"><i class="bi bi-chevron-left"></i></button>
+      <button class="lightbox-nav next" id="lightboxNext"><i class="bi bi-chevron-right"></i></button>
+      <div class="lightbox-img-wrap">
+        <div class="lightbox-loader"><div class="lb-spinner"></div></div>
+        <img class="lightbox-img" id="lightboxImg" src="" alt=""/>
+      </div>
+      <div class="lightbox-info">
+        <span class="lb-caption" id="lbCaption"></span>
+        <span class="lb-loc"><i class="bi bi-geo-alt"></i> <span id="lbLoc"></span></span>
+        <span class="lb-counter" id="lbCounter"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 80 });
+
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const spotItems  = document.querySelectorAll('.spot-item');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        spotItems.forEach(item => {
+          const show = filter === 'all' || item.dataset.category === filter;
+          item.style.opacity   = show ? '1' : '0.2';
+          item.style.transform = show ? 'scale(1)' : 'scale(0.95)';
+          item.style.transition = 'all 0.4s ease';
+        });
+      });
+    });
+
+    function animateCounter(el, target, suffix = '') {
+      let start = 0;
+      const step = target / 60;
+      const timer = setInterval(() => {
+        start += step;
+        if (start >= target) { el.textContent = target + suffix; clearInterval(timer); return; }
+        el.textContent = (suffix === '.9' ? (Math.floor(start * 10) / 10).toFixed(1) : Math.floor(start)) + suffix;
+      }, 20);
+    }
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.stat-number').forEach(el => {
+            const txt = el.textContent;
+            if (txt.includes('+')) animateCounter(el, parseInt(txt), '+');
+            else if (txt === '4.9') animateCounter(el, 4.9, '');
+          });
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    const statsSection = document.querySelector('.stats-section');
+    if (statsSection) observer.observe(statsSection);
+
+    const overlay   = document.getElementById('lightboxOverlay');
+    const lbImg     = document.getElementById('lightboxImg');
+    const lbCaption = document.getElementById('lbCaption');
+    const lbLoc     = document.getElementById('lbLoc');
+    const lbCounter = document.getElementById('lbCounter');
+    const lbClose   = document.getElementById('lightboxClose');
+    const lbPrev    = document.getElementById('lightboxPrev');
+    const lbNext    = document.getElementById('lightboxNext');
+    const lbLoader  = document.querySelector('.lightbox-loader');
+    let triggers = [], currentIdx = 0;
+    function buildTriggers() { triggers = Array.from(document.querySelectorAll('.lightbox-trigger')); }
+    buildTriggers();
+    function openLightbox(idx) {
+      currentIdx = idx;
+      const el = triggers[idx];
+      lbCaption.textContent = el.dataset.caption || '';
+      lbLoc.textContent     = el.dataset.loc || '';
+      lbCounter.textContent = `${idx + 1} / ${triggers.length}`;
+      lbImg.style.opacity = '0';
+      lbLoader.style.display = 'flex';
+      lbImg.src = el.dataset.img;
+      lbImg.onload = () => { lbLoader.style.display = 'none'; lbImg.style.opacity = '1'; };
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      lbPrev.style.display = idx === 0 ? 'none' : 'flex';
+      lbNext.style.display = idx === triggers.length - 1 ? 'none' : 'flex';
+    }
+    function closeLightbox() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+      setTimeout(() => { lbImg.src = ''; }, 300);
+    }
+    triggers.forEach((el, i) => {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', (e) => {
+        if (e.target.closest('.spot-btn')) return;
+        e.preventDefault();
+        openLightbox(i);
+      });
+    });
+    lbClose.addEventListener('click', closeLightbox);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) closeLightbox(); });
+    lbPrev.addEventListener('click', () => { if (currentIdx > 0) openLightbox(currentIdx - 1); });
+    lbNext.addEventListener('click', () => { if (currentIdx < triggers.length - 1) openLightbox(currentIdx + 1); });
+    document.addEventListener('keydown', (e) => {
+      if (!overlay.classList.contains('active')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft' && currentIdx > 0) openLightbox(currentIdx - 1);
+      if (e.key === 'ArrowRight' && currentIdx < triggers.length - 1) openLightbox(currentIdx + 1);
+    });
+  </script>
+</body>
+</html>
